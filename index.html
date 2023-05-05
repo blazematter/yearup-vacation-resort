@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Resort</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <h1>Vacation Resort</h1>
+    <form id="booking">
+        <div>
+            <label for="email">Enter your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="name">Enter your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <fieldset id="room">
+            <legend>Select the Room Type:</legend>
+            <input type="radio" name="bed" id="queen" value="king" checked>
+            Queen<br>
+            <input type="radio" name="bed" id="king" value="king">
+            King<br>
+            <input type="radio" name="bed" id="twin" value="twin">
+            2-Bedroom Suite<br>
+        </fieldset>
+
+
+        <fieldset id="discount">
+            <legend>Select any discounts applicable:</legend>
+            <input type="radio" name="discountType" id="none" value="none" checked>
+            None<br>
+            <input type="radio" name="discountType" id="senior" value="senior">
+            AAA/Senior (10%)<br>
+            <input type="radio" name="discountType" id="military" value="military">
+            Military (20%)<br>
+        </fieldset>
+
+        <label for="adult">Adults:</label>
+        <select name="adult">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <label for="child">Child:</label>
+        <select name="child">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+
+
+        <div>
+            <label for="date">Check-In Date:</label> <br />
+            <input type="date" name="selected-date" id="selected-date" min="2023-03-01">
+        </div>
+
+        <label for="visitDates">Days Visiting:</label><br />
+        <select name="visitDates">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+        </select>
+
+        <div><button type="submit">Book</button></div>
+    </form>
+
+
+
+
+</body>
+
+</html>
